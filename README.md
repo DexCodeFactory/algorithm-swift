@@ -2,4 +2,4 @@
 
 Title | Difficulty
 ------------ | -------------
-[Two Sum]() | Easy
+[Two Sum](https://github.com/DexCodeFactory/algorithm-swift/blob/master/TwoSum.swift) | Easy
