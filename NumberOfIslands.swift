@@ -30,6 +30,37 @@ Output: 3
 
 class Solution {
     func numIslands(_ grid: [[Character]]) -> Int {
-
+        var grid = grid
+        var numOfIslands: Int = 0
+        for row in 0..<grid.count {
+            for column in 0..<grid[row].count {
+                if grid[row][column] == "1" {
+                    numOfIslands += 1
+                    destroyLand(&grid, row: row, column: column)
+                }
+            }
+        }
+        
+        return numOfIslands
+    }
+    
+    private func destroyLand(_ grid: inout [[Character]], row: Int, column: Int) {
+        grid[row][column] = "0"
+        
+        if column < grid[row].count - 1 && grid[row][column + 1] == "1" {
+            destroyLand(&grid, row: row, column: column + 1)
+        }
+        
+        if 0 < column && grid[row][column - 1] == "1" {
+            destroyLand(&grid, row: row, column: column - 1)
+        }
+        
+        if row < grid.count - 1 && grid[row + 1][column] == "1" {
+            destroyLand(&grid, row: row + 1, column: column)
+        }
+        
+        if row > 0 && grid[row - 1][column] == "1" {
+            destroyLand(&grid, row: row - 1, column: column)
+        }
     }
 }
