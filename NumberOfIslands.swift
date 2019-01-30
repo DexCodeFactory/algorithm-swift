@@ -47,18 +47,22 @@ class Solution {
     private func destroyLand(_ grid: inout [[Character]], row: Int, column: Int) {
         grid[row][column] = "0"
         
+        // Check on the right side
         if column < grid[row].count - 1 && grid[row][column + 1] == "1" {
             destroyLand(&grid, row: row, column: column + 1)
         }
         
-        if 0 < column && grid[row][column - 1] == "1" {
+        // Check on the left side
+        if column > 0 && grid[row][column - 1] == "1" {
             destroyLand(&grid, row: row, column: column - 1)
         }
         
+        // Check on the up side
         if row < grid.count - 1 && grid[row + 1][column] == "1" {
             destroyLand(&grid, row: row + 1, column: column)
         }
         
+        // Check on the down side
         if row > 0 && grid[row - 1][column] == "1" {
             destroyLand(&grid, row: row - 1, column: column)
         }
