@@ -1,5 +1,5 @@
 //
-//  Palindrome.swift
+//  Palindrome2.swift
 //  
 //
 //  Created by Dexter Kim on 2019-02-21.
