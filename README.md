@@ -13,4 +13,4 @@
 | Title | Solution |
 | :------------ | ------------- |
 | [Number of Islands](https://leetcode.com/problems/number-of-islands/) | [NumberOfIslands.swift](https://github.com/DexCodeFactory/algorithm-swift/blob/master/Medium/NumberOfIslands.swift) |
-| [Summary Ranges](https://leetcode.com/problems/summary-ranges/) | [SummaryRanges](https://github.com/DexCodeFactory/algorithm-swift/blob/master/Medium/SummaryRanges.swift) |
+| [Summary Ranges](https://leetcode.com/problems/summary-ranges/) | [SummaryRanges.swift](https://github.com/DexCodeFactory/algorithm-swift/blob/master/Medium/SummaryRanges) |
